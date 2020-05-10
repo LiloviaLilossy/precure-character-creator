@@ -7,19 +7,19 @@ class Base(Sprite):
 
         # Init
         super().__init__()
+        self.path="sprites/base/body"
 
         # Central position
         self.x=250
         self.y=360
 
         # Image
-        self.base_image=pygame.image.load("sprites/body.png").convert_alpha()
+        self.base_image=pygame.image.load("sprites/base/body/body.png").convert_alpha()
         self.rect=self.base_image.get_rect(center=(self.x,self.y))
-        self.base_eyes=pygame.image.load("sprites/eyes.png").convert_alpha()
+        self.base_eyes=pygame.image.load("sprites/base/eyes/eyes.png").convert_alpha()
         self.eyes_rect=self.base_eyes.get_rect(center=(self.x,self.y))
 
         # Variables
-        self.name="base body"
         self.base_color="#FFEDCC"
         self.base_age=13
         self.base_eyecolor="#00FF00"
